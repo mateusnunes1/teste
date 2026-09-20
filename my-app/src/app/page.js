@@ -1,11 +1,10 @@
-import image from 'next/image';
 import styles from './page.module.css';
 import Navbar from './componentes/navbar';
 
 export default function Home(){
   return(
     <>
-    <Navbar/>
+    <Navbar />
     <main className={styles.main}>
       <div className={styles.conteudo}>
         <h1>Encontre Sua Vaga</h1>
