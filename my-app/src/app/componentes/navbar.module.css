@@ -1,10 +1,14 @@
 .navbar {
   width: 100%;
-  min-height: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   padding: 0 50px;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 .menu {
@@ -13,9 +17,8 @@
 }
 
 .menu img {
-  height: auto;
   width: 320px;
-  max-width: 100%;
+  height: auto;
   display: block;
   transform: translateY(60px);
 }
@@ -51,20 +54,18 @@
 
 .whatsapp:hover {
   background: #119b84;
-  transition: 0.3s;
 }
 
 
 /* ========================= */
-/*       CELULAR             */
+/*          CELULAR          */
 /* ========================= */
 
 @media (max-width: 768px) {
 
   .navbar {
-    width: 100%;
-    min-height: 100px;
-    padding: 10px 20px;
+    height: 100px;
+    padding: 10px 15px;
     justify-content: center;
   }
 
@@ -75,11 +76,9 @@
 
   .menu img {
     width: 220px;
-    max-width: 100%;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
 
-  /* Esconde os links de desktop no celular */
   .links {
     display: none;
   }
@@ -90,18 +89,16 @@
 }
 
 
-/* ========================= */
-/*       CELULAR PEQUENO     */
-/* ========================= */
+/* Celulares pequenos */
 
 @media (max-width: 480px) {
 
   .navbar {
-    padding: 10px 15px;
+    height: 90px;
   }
 
   .menu img {
-    width: 210px;
+    width: 200px;
   }
 
 }

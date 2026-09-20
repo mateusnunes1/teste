@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
-  padding-top: 250px;
+  padding-top: 220px;
 }
 .conteudo {
   width: 100%;
@@ -146,7 +146,7 @@
 
   .main {
     min-height: auto;
-    padding: 160px 20px 60px;
+    padding: 150px 20px 60px;
   }
 
   .conteudo {
@@ -157,11 +157,13 @@
   .conteudo h1 {
     font-size: 2.5rem;
     line-height: 1.1;
+    margin-bottom: 15px;
   }
 
   .conteudo p {
     font-size: 18px;
     line-height: 1.4;
+    margin-bottom: 25px;
   }
 
   .pesquisa {
@@ -180,7 +182,6 @@
 
 }
 
-
 /* ========================= */
 /*       CELULARES PEQUENOS  */
 /* ========================= */
@@ -188,7 +189,7 @@
 @media (max-width: 480px) {
 
   .main {
-    padding: 160px 15px 50px;
+    padding: 140px 15px 50px;
   }
 
   .conteudo h1 {
@@ -197,18 +198,6 @@
 
   .conteudo p {
     font-size: 16px;
-  }
-
-  .codigo {
-    font-size: 1.3rem;
-  }
-
-  .pesquisa {
-    height: 48px;
-  }
-
-  .whatsapp-text h2 {
-    font-size: 30px;
   }
 
 }
