@@ -2,9 +2,8 @@
 const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/my-app' : '',
-  assetPrefix: isProd ? '/my-app/' : '',
-  images:{
+
+  images: {
     unoptimized: true
   }
 };
