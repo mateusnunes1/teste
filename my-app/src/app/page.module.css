@@ -1,37 +1,48 @@
-.main{
+.main {
+  width: 100%;
   min-height: 100vh;
   position: relative;
-  width: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  transform: translateY(220px);
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding-top: 250px;
 }
 .conteudo {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  text-align: center;
   align-items: center;
+  text-align: center;
 }
-.conteudo h1{
+
+.conteudo h1 {
   font-size: 3rem;
-  margin-bottom: 5px;
+  margin: 0 0 5px;
   color: #5e17eb;
 }
-.conteudo p{
-  margin-top: 0px;
+
+.conteudo p {
+  margin-top: 0;
   margin-bottom: 30px;
+  color: white;
 }
-.codigo{
+
+.codigo {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #5e17eb;
 }
-.codigo:hover{
+
+.codigo:hover {
   color: #119b84;
   transition: 0.3s;
 }
+
 .pesquisa {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   height: 48px;
   border: 2px solid #ccc;
   border-radius: 30px;
@@ -39,10 +50,12 @@
   align-items: center;
   padding: 0 20px;
   margin-top: -15px;
+  box-sizing: border-box;
 }
 
-.pesquisa input{
+.pesquisa input {
   flex: 1;
+  min-width: 0;
   background: transparent;
   border: none;
   outline: none;
@@ -50,15 +63,16 @@
   font-size: 16px;
 }
 
-.pesquisa input::placeholder{
+.pesquisa input::placeholder {
   color: #55556b;
 }
 
-.icone{
+.icone {
   color: white;
   font-size: 30px;
   margin-right: 15px;
 }
+
 .whatsapp-section {
   width: 100%;
   padding: 100px 8%;
@@ -67,12 +81,6 @@
   justify-content: space-between;
   gap: 80px;
   box-sizing: border-box;
-  @media (prefers-color-scheme: dark) {
-  :root {
-    --background: linear-gradient(90deg, #02021A 0%, #08085C 100%);
-    --foreground: #ededed;
-  }
-}
 }
 
 .whatsapp-text {
@@ -107,15 +115,11 @@
   display: inline-block;
   margin-top: 20px;
   padding: 15px 25px;
-
   background: #5e17eb;
   color: white;
-
   border-radius: 10px;
-
   text-decoration: none;
   font-weight: 700;
-
   transition: 0.3s;
 }
 
@@ -124,12 +128,87 @@
   transform: translateY(-2px);
 }
 
-/* Espaço reservado para a imagem */
 .whatsapp-image {
   width: 450px;
+  max-width: 100%;
   height: 350px;
-
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+/* ========================= */
+/*       CELULAR             */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .main {
+    min-height: auto;
+    padding: 160px 20px 60px;
+  }
+
+  .conteudo {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .conteudo h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .conteudo p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .pesquisa {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pesquisa input {
+    font-size: 15px;
+  }
+
+  .icone {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+}
+
+
+/* ========================= */
+/*       CELULARES PEQUENOS  */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .main {
+    padding: 160px 15px 50px;
+  }
+
+  .conteudo h1 {
+    font-size: 2.2rem;
+  }
+
+  .conteudo p {
+    font-size: 16px;
+  }
+
+  .codigo {
+    font-size: 1.3rem;
+  }
+
+  .pesquisa {
+    height: 48px;
+  }
+
+  .whatsapp-text h2 {
+    font-size: 30px;
+  }
+
 }
