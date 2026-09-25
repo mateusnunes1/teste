@@ -8,7 +8,6 @@ export default function Navbar() {
                 <Image src="/logo next.png" alt="Logo" width={220} height={70} />
             </div>
             <div className={styles.links}>
-                <a href="#vagas">Área de Vagas</a>
                 <a href="#whatsapp">Duvidas</a>
                 <a href="#contato">Contato</a>
             </div>
