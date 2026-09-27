@@ -8,14 +8,11 @@ export default function Home(){
     <Navbar />
     <main id="inicio"className={styles.main}>
       <div className={styles.conteudo}>
-        <h1>Encontre Sua Vaga
-        </h1>
-        <p>Tire Suas Duvidas com nosso Bot Direto no <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.codigo}>WhatsApp</a></p>
+        <h1>Encontre Sua Vaga</h1>
+        <p>Tire Suas Duvidas com nosso Bot Direto no WhatsApp</p>
           <div className={styles.pesquisa}>
           <span className={styles.icone}>⌕</span>
-          <input 
-          type="text"
-         placeholder="Digite o nome da vaga que deseja encontrar"/>
+          <input type="text" placeholder="Digite o nome da vaga que deseja encontrar"/>
         </div>
         <div>
           <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsappFlutuante}><FaWhatsapp /></a>

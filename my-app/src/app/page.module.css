@@ -6,9 +6,25 @@
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
-  padding-top: 350px;
+  padding-top: 330px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
+}
+.main::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  
+  background-image: url("/icone-next.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -40%);
+  opacity: 0.06;
+  z-index: 0;
 }
 .conteudo {
   width: 100%;
