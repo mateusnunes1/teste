@@ -217,12 +217,13 @@
 }
 
 
-/* ========================= */
-/*       CELULAR             */
-/* ========================= */
+/* =========================
+   RESPONSIVIDADE - CELULAR
+   ========================= */
 
 @media (max-width: 768px) {
 
+  /* Página principal */
   .main {
     min-height: auto;
     padding: 150px 20px 60px;
@@ -259,11 +260,94 @@
     margin-right: 10px;
   }
 
+
+  /* =========================
+     SOBRE A NEXTVAGA
+     ========================= */
+
+  .sobre-nos-section {
+    min-height: auto;
+    padding: 60px 25px;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .sobre-nos-imagem {
+    width: 100%;
+    transform: none;
+    order: 1;
+  }
+
+  .sobre-nos-imagem img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  .sobre-nos-text {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .sobre-nos-text h2 {
+    font-size: 36px;
+  }
+
+  .sobre-nos-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+
+  /* =========================
+     WHATSAPP
+     ========================= */
+
+  .whatsapp-section {
+    min-height: auto;
+    padding: 60px 25px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .whatsapp-text {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    order: 1;
+  }
+
+  .whatsapp-text h2 {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+
+  .whatsapp-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .whatsapp-imagem {
+    width: 100%;
+    order: 2;
+  }
+
+  .whatsapp-imagem img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 25px;
+  }
 }
 
-/* ========================= */
-/*       CELULARES PEQUENOS  */
-/* ========================= */
+
+/* =========================
+   CELULARES PEQUENOS
+   ========================= */
 
 @media (max-width: 480px) {
 
@@ -279,4 +363,23 @@
     font-size: 16px;
   }
 
+  .sobre-nos-section,
+  .whatsapp-section {
+    padding: 45px 18px;
+  }
+
+  .sobre-nos-text h2,
+  .whatsapp-text h2 {
+    font-size: 30px;
+  }
+
+  .sobre-nos-text p,
+  .whatsapp-text p {
+    font-size: 15px;
+  }
+
+  .sobre-nos-imagem img,
+  .whatsapp-imagem img {
+    border-radius: 20px;
+  }
 }
