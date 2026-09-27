@@ -8,8 +8,9 @@ export default function Navbar() {
                 <Image src="/logo next.png" alt="Logo" width={220} height={70} />
             </div>
             <div className={styles.links}>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-nos">Sobre Nós</a>
                 <a href="#whatsapp">Duvidas</a>
-                <a href="#contato">Contato</a>
             </div>
             <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsapp}>WhatsApp</a>
             
