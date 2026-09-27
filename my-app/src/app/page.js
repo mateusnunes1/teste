@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import Navbar from './componentes/navbar';
 import { FaWhatsapp } from "react-icons/fa";
+import PesquisaVagas from './componentes/pesquisavagas';
 
 export default function Home(){
   return(
@@ -10,9 +11,7 @@ export default function Home(){
       <div className={styles.conteudo}>
         <h1>Encontre Sua Vaga</h1>
         <p>Tire Suas Duvidas com nosso Bot Direto no WhatsApp</p>
-          <div className={styles.pesquisa}>
-          <span className={styles.icone}>⌕</span>
-          <input type="text" placeholder="Digite o nome da vaga que deseja encontrar"/></div>
+        <PesquisaVagas />
         <div><a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsappFlutuante}><FaWhatsapp /></a></div>
       </div>
     </main>
