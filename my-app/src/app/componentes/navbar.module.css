@@ -58,16 +58,24 @@
   background: #119b84;
 }
 
+.menuButton{
+  display: none;
+}
 @media (max-width: 768px) {
 
   .navbar {
-    position: relative;
+    position: fixed;
     z-index: 1000;
   }
 
+  .menu img {
+    position: relative;
+    right: 50px;
+  }
   .menuButton {
     display: block;
     position: relative;
+    right: 30px;
     z-index: 1002;
 
     margin-left: auto;

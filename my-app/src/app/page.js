@@ -12,12 +12,9 @@ export default function Home(){
         <p>Tire Suas Duvidas com nosso Bot Direto no WhatsApp</p>
           <div className={styles.pesquisa}>
           <span className={styles.icone}>⌕</span>
-          <input type="text" placeholder="Digite o nome da vaga que deseja encontrar"/>
-        </div>
-        <div>
-          <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsappFlutuante}><FaWhatsapp /></a>
-        </div>
-        </div>
+          <input type="text" placeholder="Digite o nome da vaga que deseja encontrar"/></div>
+        <div><a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsappFlutuante}><FaWhatsapp /></a></div>
+      </div>
     </main>
     <section id="sobre-nos" className={styles["sobre-nos-section"]}>
       <div className={styles["sobre-nos-image"]}>

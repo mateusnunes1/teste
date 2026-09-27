@@ -17,7 +17,7 @@
   left: 50%;
   width: 500px;
   height: 500px;
-  
+  pointer-events: none;
   background-image: url("/icone-next.png");
   background-size: contain;
   background-repeat: no-repeat;
