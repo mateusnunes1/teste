@@ -1,13 +1,18 @@
 'use client';
 import Image from 'next/image';
 import styles from './navbar.module.css';
+import { useState } from 'react';
 
 export default function Navbar() {
+    const [menuAberto, setMenuAberto] = useState(false);
     return(
         <nav className={styles.navbar}>
             <div className={styles.menu}>
                 <Image src="/logo next.png" alt="Logo" width={220} height={70} />
             </div>
+            <button className={styles.menuButton} onClick={() => setMenuAberto(!menuAberto)}>
+                ☰
+            </button>
             <div className={`${styles.links} ${styles.menuAberto ? styles.menuAberto : ''}`}>
                 <a href="#inicio" onClick={() => setMenuAberto(false)}>Inicio</a>
                 <a href="#sobre-nos" onClick={() => setMenuAberto(false)}>Sobre Nós</a>
