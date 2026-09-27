@@ -34,7 +34,7 @@ export default function Home(){
           Nosso objetivo é facilitar a busca por oportunidades de trabalho, oferecendo uma plataforma intuitiva e eficiente.
         </p>
         <p>
-          A NextVaga oferece uma experiência de busca de vagas de emprego simplificada e eficiente. Com a NextVaga, você pode pesquisar vagas por palavra-chave, localização e categoria, além de receber notificações sobre novas oportunidades.
+          Com uma experiência de busca de vagas de emprego simplificada e eficiente.Você pode pesquisar vagas por palavra-chave, localização e categoria, além de receber notificações sobre novas oportunidades.
           Estamos comprometidos em ajudar você a encontrar a vaga dos seus sonhos!
         </p>
       </div>
