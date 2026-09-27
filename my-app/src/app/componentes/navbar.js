@@ -10,10 +10,10 @@ export default function Navbar() {
             <div className={styles.menu}>
                 <Image src="/logo next.png" alt="Logo" width={220} height={70} />
             </div>
-            <button className={styles.menuButton} onClick={() => setMenuAberto(!menuAberto)}>
+            <button className={styles.menuButton} onClick={() => setMenuAberto(!menuAberto)} aria-label="Abrir menu">
                 ☰
             </button>
-            <div className={`${styles.links} ${styles.menuAberto ? styles.menuAberto : ''}`}>
+            <div className={`${styles.links} ${menuAberto ? styles.aberto : ''}`}>
                 <a href="#inicio" onClick={() => setMenuAberto(false)}>Inicio</a>
                 <a href="#sobre-nos" onClick={() => setMenuAberto(false)}>Sobre Nós</a>
                 <a href="#whatsapp" onClick={() => setMenuAberto(false)}>Duvidas</a>
