@@ -42,7 +42,7 @@ export default function Home(){
           <p>
             Converse com nosso bot, consulte informações sobre as
             oportunidades e encontre respostas para suas dúvidas
-            de forma rápida e prática.</p>
+            de forma rápida e prática...</p>
           <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles["whatsapp-button"]}>💬 Fale conosco pelo WhatsApp</a>
         </div>
               <div className={styles["whatsapp-image"]}>
