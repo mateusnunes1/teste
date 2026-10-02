@@ -15,20 +15,32 @@
 .main::before{
   content: "";
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
-  width: 600px;
-  height: 600px;
+  width: 700px;
+  height: 700px;
   pointer-events: none;
   background-image: url("/icone-next.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   transform: translate(-50%, -50%);
-  opacity: 0.06;
+  opacity: 0.15;
   z-index: 0;
+  filter: drop-shadow(0 10px 30px rgba(2, 99, 236, 0.9));
+  animation: piscarlogo 7s infinite ease-in-out;
 }
-.conteudo {
+@keyframes piscarlogo {
+  0%, 100% {
+    opacity: 0.08;
+   filter: drop-shadow(0 10px 30px rgba(2, 99, 236, 0.9));
+  }
+  50% {
+    opacity: 0.25;
+   filter: drop-shadow(0 10px 30px rgba(2, 99, 236, 0.9));
+  }
+}
+.conteudo { 
   width: 100%;
   max-width: 1200px;
   display: flex;
