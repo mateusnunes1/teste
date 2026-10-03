@@ -8,7 +8,7 @@ export default function Navbar() {
     return(
         <nav className={styles.navbar}>
             <div className={styles.menu}>
-                <Image src="/logo-next1.png" alt="Logo" width={220} height={70} />
+                <Image src="/logo-next2.png" alt="Logo" width={220} height={70} />
             </div>
             <button className={styles.menuButton} onClick={() => setMenuAberto(!menuAberto)} aria-label="Abrir menu">
                 ☰

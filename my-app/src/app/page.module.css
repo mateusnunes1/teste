@@ -240,7 +240,7 @@
 .mvvCard:hover {
   transform: translateY(-10px);
   border-color: #7427ff;
-  background: rgba(116, 39, 255, 0.10);
+  background: rgba(246, 245, 246, 0.1);
   box-shadow:
     0 15px 40px rgba(116, 39, 255, 0.25);
 }
