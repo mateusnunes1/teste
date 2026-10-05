@@ -1,50 +1,189 @@
 .pesquisa {
-  width: 500px;
-  max-width: 800px;
-  height: 60px;
-  border: 2px solid #ccc;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  margin-top: -15px;
-  box-sizing: border-box;
+    width: 500px;
+    max-width: 800px;
+    height: 60px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: -15px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 20;
 }
-
 .pesquisa input {
-  flex: 1;
-  min-width: 0;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  font-size: 16px;
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
 }
-
 .pesquisa input::placeholder {
-  color: #55556b;
+    color: #55556b;
 }
-
+.containerPesquisa {
+    position: relative;
+    width: 500px;
+}
 .icone {
-  font-size: 30px;
-  margin-right: 10px;
-  color: white;
-  animation: procurar 2s infinite ease-in-out;
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+    animation: procurar 2s infinite ease-in-out;
 }
+.resultados {
+    width: 500px;
+    max-height: 320px;
+    overflow-y: auto;
+    background: #ffffff;
+    margin-top: 3px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 50;
+    font-family: "SpaceMono", monospace;
+}
+.vaga {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.vaga:hover {
+    background: #f5f5f5;
+}
+.vaga img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.informacoes {
+    flex: 1;
+    min-width: 0;
+}
+
+.informacoes h3 {
+    margin: 0 0 5px 0;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+}
+.informacoes .empresa {
+    margin: 0 0 4px 0 !important;
+    color: #444444 !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+.informacoes .detalhes {
+    margin: 0 !important;
+    color: #777777 !important;
+    font-size: 13px;
+}
+.botao {
+    background: #5e17eb;
+    color: white;
+    text-decoration: none;
+    padding: 9px 14px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.botao:hover {
+    background: #7427ff;
+    transform: translateY(-2px);
+}
+
+.semResultado {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #555;
+}
+
+
 @keyframes procurar {
-  0%, 100% {
-    transform: translateX(0) rotate(0deg);
-  }
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-3px) rotate(-10deg);
+    }
+    50% {
+        transform: translateX(3px) rotate(10deg);
+    }
+    75% {
+        transform: translateX(-2px) rotate(-5deg);
+    }
+}
 
-  25% {
-    transform: translateX(-3px) rotate(-10deg);
-  }
 
-  50% {
-    transform: translateX(3px) rotate(10deg);
-  }
+@media (max-width: 600px) {
 
-  75% {
-    transform: translateX(-2px) rotate(-5deg);
-  }
+    .containerPesquisa {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .pesquisa {
+        width: 100%;
+        height: 55px;
+        box-sizing: border-box;
+    }
+
+    .resultados {
+        width: calc(100% - 30px);
+        left: 15px;
+        top: 58px;
+
+        max-height: 320px;
+
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .vaga {
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .logoEmpresa {
+        width: 38px;
+        height: 38px;
+    }
+
+    .informacoes h3 {
+        font-size: 13px;
+    }
+
+    .empresa {
+        font-size: 12px;
+    }
+
+    .detalhes {
+        font-size: 11px;
+    }
+
+    .botao {
+        padding: 7px 8px;
+        font-size: 11px;
+    }
+
 }

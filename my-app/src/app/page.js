@@ -2,7 +2,6 @@ import styles from './page.module.css';
 import Navbar from './componentes/navbar';
 import { FaWhatsapp } from "react-icons/fa";
 import PesquisaVagas from './componentes/pesquisavagas';
-import {AsapSharp} from 'next/font/google';
 
 export default function Home(){
   return(

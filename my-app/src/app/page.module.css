@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .main {
   width: 100%;
   min-height: 100vh;
@@ -63,7 +63,7 @@
   margin-top: 0;
   margin-bottom: 30px;
   color: white;
-  font-family: "SpaceMono", monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .codigo {
@@ -83,7 +83,7 @@
   gap: 20px;
   width: 100%;
   margin-top: 35px;
-  font-family: "SpaceMono", monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .cardRapido {
@@ -96,7 +96,7 @@
   border: 1px solid rgba(116, 39, 255, 0.35);
   border-radius: 18px;
   transition: 0.3s ease;
-  font-family: "SpaceMono", monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .cardRapido:hover {
@@ -271,7 +271,7 @@
   color: #5e17eb;
   font-size: 14px;
   font-weight: 700;
-  font-family: " SpaceMono", monospace;
+  font-family: " Space Mono", monospace;
 }
 
 .whatsapp-text h2 {
@@ -296,7 +296,7 @@
   line-height: 1.6;
   color: white;
   margin-bottom: 15px;
-  font-family: "SpaceMono", monospace;
+  font-family: "Space Mono", monospace;
   text-align: justify;
 }
 
@@ -310,7 +310,7 @@
   text-decoration: none;
   font-weight: 700;
   transition: 0.3s;
-  font-family: "SpaceMono", monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .whatsapp-button:hover {
@@ -355,180 +355,524 @@
   background-color: #128C7E;
 }
 
-
-/* =========================
-   RESPONSIVIDADE - CELULAR
-   ========================= */
+/* ========================================
+   RESPONSIVIDADE - TABLETS E CELULARES
+   ======================================== */
 
 @media (max-width: 768px) {
 
-  /* Página principal */
-  .main {
-    min-height: auto;
-    padding: 150px 20px 60px;
-  }
+    /* =========================
+       PÁGINA PRINCIPAL
+       ========================= */
 
-  .conteudo {
-    width: 100%;
-    max-width: 100%;
-  }
+    .main {
+        min-height: auto;
+        padding: 140px 20px 70px;
+        overflow: hidden;
+    }
 
-  .conteudo h1 {
-    font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 15px;
-  }
+    .main::before {
+        width: 450px;
+        height: 450px;
+        top: 45%;
+        opacity: 0.10;
+    }
 
-  .conteudo p {
-    font-size: 18px;
-    line-height: 1.4;
-    margin-bottom: 25px;
-  }
+    .conteudo {
+        width: 100%;
+        max-width: 100%;
+    }
 
-  .pesquisa {
-    width: 100%;
-    max-width: 100%;
-  }
+    .conteudo h1 {
+        font-size: 2.3rem;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
 
-  .pesquisa input {
-    font-size: 15px;
-  }
-
-  .icone {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  .cardsRapidos {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 35px;
-  }
-
-  .cardRapido {
-    width: 90%;
-    max-width: 350px;
-  }
-
-  /* =========================
-     SOBRE A NEXTVAGA
-     ========================= */
-
-  .sobre-nos-section {
-    min-height: auto;
-    padding: 60px 25px;
-    flex-direction: column;
-    gap: 35px;
-  }
-
-  .sobre-nos-imagem {
-    width: 100%;
-    transform: none;
-    order: 1;
-  }
-
-  .sobre-nos-imagem img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    border-radius: 30px;
-  }
-
-  .sobre-nos-text {
-    width: 100%;
-    max-width: 600px;
-    margin: 0;
-    text-align: center;
-    order: 2;
-  }
-
-  .sobre-nos-text h2 {
-    font-size: 36px;
-  }
-
-  .sobre-nos-text p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
+    .conteudo p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
 
 
-  /* =========================
-     WHATSAPP
-     ========================= */
+    /* =========================
+       PESQUISA
+       ========================= */
 
-  .whatsapp-section {
-    min-height: auto;
-    padding: 60px 25px;
-    flex-direction: column;
-    gap: 40px;
-  }
+    .containerPesquisa {
+        width: 100%;
+        max-width: 500px;
+    }
 
-  .whatsapp-text {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    order: 1;
-  }
+    .pesquisa {
+        width: 100%;
+        max-width: 100%;
+        height: 55px;
+        margin-top: 0;
+    }
 
-  .whatsapp-text h2 {
-    font-size: 36px;
-    line-height: 1.15;
-  }
+    .pesquisa input {
+        width: 100%;
+        font-size: 15px;
+    }
 
-  .whatsapp-text p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
+    .icone {
+        font-size: 25px;
+        margin-right: 8px;
+    }
 
-  .whatsapp-imagem {
-    width: 100%;
-    order: 2;
-  }
 
-  .whatsapp-imagem img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 25px;
-  }
+    /* =========================
+       RESULTADOS DA PESQUISA
+       ========================= */
+
+    .resultados {
+        width: 100%;
+        max-width: 100%;
+
+        top: 58px;
+        left: 0;
+
+        max-height: 320px;
+
+        overflow-y: auto;
+
+        box-sizing: border-box;
+    }
+
+    .vaga {
+        min-height: 100px;
+        height: auto;
+
+        padding: 14px;
+
+        gap: 10px;
+    }
+
+    .logoEmpresa {
+        width: 42px;
+        height: 42px;
+    }
+
+    .informacoes {
+        min-width: 0;
+    }
+
+    .informacoes h3 {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .empresa {
+        font-size: 12px;
+    }
+
+    .detalhes {
+        font-size: 11px;
+    }
+
+    .botao {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+
+    /* =========================
+       CARDS RÁPIDOS
+       ========================= */
+
+    .cardsRapidos {
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+
+        margin-top: 35px;
+    }
+
+    .cardRapido {
+        width: 100%;
+        max-width: 350px;
+
+        min-height: 150px;
+
+        padding: 22px;
+    }
+
+    .cardRapido h3 {
+        font-size: 18px;
+    }
+
+    .cardRapido p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+
+    /* =========================
+       SOBRE NÓS
+       ========================= */
+
+    .sobre-nos-section {
+        min-height: auto;
+
+        padding: 70px 25px;
+
+        box-sizing: border-box;
+    }
+
+    .sobre-nos-conteudo {
+        width: 100%;
+    }
+
+    .sobre-nos-topo {
+        flex-direction: column;
+
+        gap: 40px;
+
+        align-items: center;
+    }
+
+    .sobre-nos-image {
+        width: 100%;
+
+        order: 1;
+    }
+
+    .sobre-nos-image img {
+        width: 100%;
+        max-width: 500px;
+
+        height: auto;
+
+        border-radius: 25px;
+    }
+
+    .sobre-nos-text {
+        width: 100%;
+        max-width: 650px;
+
+        order: 2;
+
+        text-align: center;
+    }
+
+    .sobre-nos-tag {
+        font-size: 13px;
+    }
+
+    .sobre-nos-text h2 {
+        font-size: 36px;
+        line-height: 1.15;
+
+        margin: 15px 0 20px;
+    }
+
+    .sobre-nos-text p {
+        font-size: 15px;
+        line-height: 1.7;
+
+        text-align: justify;
+    }
+
+
+    /* =========================
+       MISSÃO, VISÃO E VALORES
+       ========================= */
+
+    .mvv-section {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 15px;
+
+        margin-top: 40px;
+
+        justify-content: center;
+    }
+
+    .mvvCard {
+        width: 100%;
+
+        max-width: none;
+
+        min-height: 150px;
+
+        padding: 20px 10px;
+    }
+
+    .mvvCard img {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 10px;
+    }
+
+    .mvvCard p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+
+    /* =========================
+       WHATSAPP
+       ========================= */
+
+    .whatsapp-section {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 70px 25px;
+
+        box-sizing: border-box;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 40px;
+    }
+
+    .whatsapp-text {
+        width: 100%;
+        max-width: 650px;
+
+        text-align: center;
+    }
+
+    .whatsapp-tag {
+        font-size: 13px;
+    }
+
+    .whatsapp-text h2 {
+        font-size: 36px;
+        line-height: 1.15;
+
+        margin: 15px 0 20px;
+    }
+
+    .whatsapp-text p {
+        font-size: 15px;
+        line-height: 1.7;
+
+        text-align: justify;
+    }
+
+    .whatsapp-button {
+        margin-top: 15px;
+
+        padding: 13px 20px;
+
+        font-size: 14px;
+    }
+
+    .whatsapp-image {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .whatsapp-image img {
+        width: 100%;
+        max-width: 500px;
+
+        height: auto;
+
+        border-radius: 25px;
+    }
+
+
+    /* =========================
+       WHATSAPP FLUTUANTE
+       ========================= */
+
+    .whatsappFlutuante {
+        width: 52px;
+        height: 52px;
+
+        right: 18px;
+        bottom: 18px;
+
+        font-size: 29px;
+    }
 }
-
-
-/* =========================
-   CELULARES PEQUENOS
-   ========================= */
 
 @media (max-width: 480px) {
 
-  .main {
-    padding: 140px 15px 50px;
-  }
+    .main {
+        padding: 120px 15px 60px;
+    }
 
-  .conteudo h1 {
-    font-size: 2.2rem;
-  }
+    .main::before {
+        width: 320px;
+        height: 320px;
 
-  .conteudo p {
-    font-size: 16px;
-  }
+        top: 40%;
 
-  .sobre-nos-section,
-  .whatsapp-section {
-    padding: 45px 18px;
-  }
+        opacity: 0.08;
+    }
 
-  .sobre-nos-text h2,
-  .whatsapp-text h2 {
-    font-size: 30px;
-  }
+    .conteudo h1 {
+        font-size: 2rem;
+    }
 
-  .sobre-nos-text p,
-  .whatsapp-text p {
-    font-size: 15px;
-  }
+    .conteudo p {
+        font-size: 15px;
+    }
 
-  .sobre-nos-imagem img,
-  .whatsapp-imagem img {
-    border-radius: 20px;
-  }
+
+    .containerPesquisa {
+        width: 100%;
+    }
+
+    .pesquisa {
+        height: 52px;
+
+        padding: 0 15px;
+    }
+
+    .pesquisa input {
+        font-size: 14px;
+    }
+
+    .icone {
+        font-size: 23px;
+    }
+
+    .resultados {
+        top: 55px;
+
+        max-height: 300px;
+
+        border-radius: 0 0 12px 12px;
+    }
+
+    .vaga {
+        min-height: 90px;
+
+        padding: 12px;
+
+        gap: 8px;
+    }
+
+    .logoEmpresa {
+        width: 38px;
+        height: 38px;
+    }
+
+    .informacoes h3 {
+        font-size: 13px;
+    }
+
+    .empresa {
+        font-size: 11px;
+    }
+
+    .detalhes {
+        font-size: 10px;
+    }
+
+    .botao {
+        padding: 7px 8px;
+
+        font-size: 10px;
+
+        border-radius: 6px;
+    }
+
+
+  
+    .cardRapido {
+        width: 100%;
+        min-height: 140px;
+
+        padding: 20px 15px;
+    }
+
+
+  
+
+    .sobre-nos-section {
+        padding: 50px 18px;
+    }
+
+    .sobre-nos-topo {
+        gap: 30px;
+    }
+
+    .sobre-nos-text h2 {
+        font-size: 30px;
+    }
+
+    .sobre-nos-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .sobre-nos-image img {
+        border-radius: 20px;
+    }
+
+
+
+
+    .mvv-section {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        margin-top: 30px;
+    }
+
+    .mvvCard {
+        min-height: 130px;
+
+        padding: 20px;
+    }
+
+    .mvvCard img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .mvvCard p {
+        font-size: 13px;
+    }
+
+
+
+    .whatsapp-section {
+        padding: 50px 18px;
+
+        gap: 30px;
+    }
+
+    .whatsapp-text h2 {
+        font-size: 30px;
+    }
+
+    .whatsapp-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .whatsapp-image img {
+        border-radius: 20px;
+    }
+
+    .whatsappFlutuante {
+        width: 48px;
+        height: 48px;
+
+        right: 15px;
+        bottom: 15px;
+        font-size: 26px;
+    }
 }

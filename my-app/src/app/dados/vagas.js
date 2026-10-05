@@ -1,23 +1,56 @@
 export const vagas = [
 {
     id: 1,
-    titulo: "Jovem Aprendiz Adm",
-    empresa: "Empresa X",
-    localização: "São Paulo, SP",
-    categoria: "Administração/Administrativo"
+    empresa: 'Itau Unibanco',
+    vaga: 'Estagio Corporativo',
+    categoria: 'Estágio',
+    localização: 'São Paulo, SP',
+    logo: '/empresas/itau.png',
+    link: 'https://carreiras.itau.com.br/vaga/sao-paulo/programa-de-estagio-corporativo-2026/35299/97432985872'
 },
 {
     id: 2,
-    titulo: "Estagiario de Marketing",
-    empresa: "Empresa Itau",
-    localização: "São Paulo, SP",
-    categoria: "Marketing"
+    empresa: 'General Motors',
+    vaga: 'Estagio em Engenharia',
+    localização: 'São Paulo, SP',
+    categoria: 'Estágio',
+    logo: '/empresas/General-Motors.png',
+    link: 'https://generalmotors.wd5.myworkdayjobs.com/pt-BR/Careers_GM/job/Sao-Caetano-do-Sul-Sao-Paulo-Brazil/Programa-de-Estgio-GM-2027---1--semestre-_JR-202620629?source=LinkedIn'
 },
 {
     id: 3,
-    titulo: "Jovem Aprendiz Almoxarifado",
-    empresa: "Empresa Uninove",
-    localização: "Rio de Janeiro, RJ",
-    categoria: "Almoxarifado"
+    empresa: 'Empresa Mottu',
+    vaga: 'Estagio de Marketplace',
+    localização: 'São Paulo, SP',
+    categoria: 'Estágio',
+    logo: '/empresas/mottu.png',
+    link: 'https://mottu.inhire.app/vagas/eabbad37-c241-4055-8c1a-5a45725a3959/estagiario-de-marketplace'
+},
+{
+    id: 4,
+    empresa: 'Empresa Vivo',
+    vaga: 'Jovem Aprendiz Vivo',
+    localização: 'São Paulo, SP',
+    categoria: 'Jovem Aprendiz',
+    logo: '/empresas/vivo.jpg',
+    link: 'https://vivo.gupy.io/jobs/11131069?jobBoardSource=linkedin'
+},
+{
+    id: 5,
+    empresa: 'Empresa Ambev',
+    vaga: 'Jovem Aprendiz Ambev',
+    localização: 'São Paulo, SP',
+    categoria: 'Jovem Aprendiz',
+    logo: '/empresas/ambev.png',
+    link: 'https://ambev.gupy.io/jobs/11983553?jobBoardSource=linkedin'
+},
+{
+    id: 6,
+    empresa: 'Empresa Bosch',
+    vaga: 'Jovem Aprendiz Bosch',
+    localização: 'São Paulo, SP',
+    categoria: 'Jovem Aprendiz',
+    logo: '/empresas/bosch.png',
+    link: 'https://jobs.smartrecruiters.com/BoschGroup/744000151048008-programa-jovem-aprendiz-solucoes-digitais-1-semestre-2027-vaga-exclusiva-para-pessoa-com-deficiencia'
 }
 ];
