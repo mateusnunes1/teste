@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Isometra&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .main {
   width: 100%;
   min-height: 100vh;
@@ -12,6 +12,24 @@
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+  animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .main::before{
   content: "";
   position: absolute;
@@ -50,12 +68,13 @@
   position: relative;
   z-index: 1;
 }
-
 .conteudo h1 {
   margin: 0 0 5px;
   color: #5e17eb;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  font-style: normal;
   text-shadow: 0px 5px 20px rgba(6, 6, 6, 0.5) ;
 }
 
@@ -354,17 +373,7 @@
   transform: scale(1.1);
   background-color: #128C7E;
 }
-
-/* ========================================
-   RESPONSIVIDADE - TABLETS E CELULARES
-   ======================================== */
-
 @media (max-width: 768px) {
-
-    /* =========================
-       PÁGINA PRINCIPAL
-       ========================= */
-
     .main {
         min-height: auto;
         padding: 140px 20px 70px;
@@ -394,12 +403,6 @@
         line-height: 1.5;
         margin-bottom: 25px;
     }
-
-
-    /* =========================
-       PESQUISA
-       ========================= */
-
     .containerPesquisa {
         width: 100%;
         max-width: 500px;
@@ -421,12 +424,6 @@
         font-size: 25px;
         margin-right: 8px;
     }
-
-
-    /* =========================
-       RESULTADOS DA PESQUISA
-       ========================= */
-
     .resultados {
         width: 100%;
         max-width: 100%;
@@ -476,12 +473,6 @@
         padding: 8px 10px;
         font-size: 11px;
     }
-
-
-    /* =========================
-       CARDS RÁPIDOS
-       ========================= */
-
     .cardsRapidos {
         width: 100%;
 
@@ -510,12 +501,6 @@
         font-size: 13px;
         line-height: 1.5;
     }
-
-
-    /* =========================
-       SOBRE NÓS
-       ========================= */
-
     .sobre-nos-section {
         min-height: auto;
 
@@ -577,12 +562,6 @@
 
         text-align: justify;
     }
-
-
-    /* =========================
-       MISSÃO, VISÃO E VALORES
-       ========================= */
-
     .mvv-section {
         width: 100%;
 
@@ -618,12 +597,6 @@
         font-size: 12px;
         line-height: 1.4;
     }
-
-
-    /* =========================
-       WHATSAPP
-       ========================= */
-
     .whatsapp-section {
         width: 100%;
 
@@ -687,12 +660,6 @@
 
         border-radius: 25px;
     }
-
-
-    /* =========================
-       WHATSAPP FLUTUANTE
-       ========================= */
-
     .whatsappFlutuante {
         width: 52px;
         height: 52px;
