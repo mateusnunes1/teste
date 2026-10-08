@@ -58,6 +58,9 @@
 .links a:hover {
   color: #7427ff;
 }
+.links a.ativo{
+  color: #7427ff;
+}
 
 .links a:hover::after {
   width: 100%;

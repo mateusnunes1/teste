@@ -1,10 +1,28 @@
 'use client';
 import Image from 'next/image';
 import styles from './navbar.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
     const [menuAberto, setMenuAberto] = useState(false);
+    const [secaoAtiva, setSecaoAtiva] = useState('inicio');
+    useEffect(() => {
+  const secoes = document.querySelectorAll("main[id], section[id]");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSecaoAtiva(entry.target.id);
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+    }
+  );
+  secoes.forEach((secao) => observer.observe(secao));
+  return () => observer.disconnect();
+}, []);
     return(
         <nav className={styles.navbar}>
             <div className={styles.menu}>
@@ -14,9 +32,9 @@ export default function Navbar() {
                 ☰
             </button>
             <div className={`${styles.links} ${menuAberto ? styles.aberto : ''}`}>
-                <a href="#inicio" onClick={() => setMenuAberto(false)}>Inicio</a>
-                <a href="#sobre-nos" onClick={() => setMenuAberto(false)}>Sobre Nós</a>
-                <a href="#whatsapp" onClick={() => setMenuAberto(false)}>Duvidas</a>
+                <a href="#inicio" onClick={() => setMenuAberto(false)} className={secaoAtiva === 'inicio' ? styles.ativo : ''}>Inicio</a>
+                <a href="#sobre-nos" onClick={() => setMenuAberto(false)} className={secaoAtiva === 'sobre-nos' ? styles.ativo : ''}>Sobre Nós</a>
+                <a href="#whatsapp" onClick={() => setMenuAberto(false)} className={secaoAtiva === 'whatsapp' ? styles.ativo : ''}>Duvidas</a>
             </div>
             <a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsapp}>WhatsApp</a>
             
