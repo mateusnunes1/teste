@@ -31,8 +31,7 @@ return (
                     vagasFiltradas.map((vaga) => (
                         <div
                             key={vaga.id}
-                            className={styles.vaga}
-                        >
+                            className={styles.vaga}>
                             <img
                                 src={vaga.logo}
                                 alt={`Logo da ${vaga.empresa}`}

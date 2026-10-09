@@ -9,7 +9,8 @@ export default function Home(){
     <Navbar />
       <main id="inicio" className={styles.main}>
         <div className={styles.conteudo}>
-              <h1>Seu Próximo Passo Começa Aqui</h1>
+              <h1>Seu Próximo Passo Começa A
+                qui</h1>
               <p>Encontre oportunidades de Jovem Aprendiz e Estágio que combinam com você</p>
               <PesquisaVagas />
               <div><a href="https://chat.whatsapp.com/KuZlWCbbvtcKduaI3ZTTsc" target="_blank" rel="noopener noreferrer" className={styles.whatsappFlutuante}><FaWhatsapp /></a></div>
@@ -19,6 +20,7 @@ export default function Home(){
                       <h3>Jovem Aprendiz</h3>
                       <p>Encontre oportunidades para começar sua carreira.</p>
                     </div>
+                    
 
                     <div className={styles.cardRapido}>
                       <div className={styles.iconeCard}>🎓</div>

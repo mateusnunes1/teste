@@ -52,5 +52,14 @@ export const vagas = [
     categoria: 'Jovem Aprendiz',
     logo: '/empresas/bosch.png',
     link: 'https://jobs.smartrecruiters.com/BoschGroup/744000151048008-programa-jovem-aprendiz-solucoes-digitais-1-semestre-2027-vaga-exclusiva-para-pessoa-com-deficiencia'
+},
+{
+    id: 7,
+    empresa: 'Empresa Michelin',
+    vaga: 'Estagio Area de Produção',
+    localização: 'Barueri, SP',
+    categoria: 'Estágio',
+    logo: '/empresas/michelin.png',
+    link: 'https://michelinhr.wd3.myworkdayjobs.com/pt-BR/Michelin/job/Barueri/Banco-de-Talentos---Programa-de-Estgio_R-2024016749'
 }
 ];
