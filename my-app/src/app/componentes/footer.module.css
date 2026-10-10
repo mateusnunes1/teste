@@ -1,0 +1,195 @@
+
+.footer {
+  width: 100%;
+  padding: 55px 6% 20px;
+  background: linear-gradient(90deg,#08082E 0%,#101078 100%);
+  color: #f1f1ff;
+  border-top: 1px solid rgba(116, 39, 255, 0.3);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 50px;
+}
+
+.brand {
+  max-width: 380px;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #fff;
+  font-size: 27px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: #7427ff;
+}
+.logo-text {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+}
+
+.brand p {
+  margin: 0;
+  max-width: 340px;
+  color: #b5b5d0;
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: "Space Mono", monospace;
+}
+
+.coluna h3 {
+  margin: 5px 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+
+.coluna ul {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer a:not(.logo) {
+  color: #b5b5d0;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-family: "Space Mono", monospace;
+  
+}
+
+.coluna a:hover,
+.social a:hover,
+.bottom a:hover {
+  color: #a77aff;
+}
+
+.coluna a {
+  display: inline-block;
+}
+
+.coluna a:hover {
+  transform: translateX(4px);
+}
+
+.social {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  margin-top: 25px;
+}
+
+
+.socialLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  min-width: 65px;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Space Mono", monospace;
+
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialLink span {
+  color: #ffffff;
+}
+
+.socialLink:hover {
+  color: #a77aff !important;
+  transform: translateY(-3px);
+}
+
+.socialLink:hover img {
+  transform: scale(1.12);
+}
+
+.socialLink img {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(1);
+  transition: transform 0.3s ease;
+}
+
+
+.bottom {
+  max-width: 1200px;
+  margin: 45px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-family: "Space Mono", monospace;
+
+}
+
+.bottom p {
+  margin: 0;
+  color: #8585aa;
+  font-size: 12px;
+}
+
+.bottom a {
+  white-space: nowrap;
+}
+
+.footer a:focus-visible {
+  outline: 2px solid #a77aff;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+@media (max-width: 800px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 25px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+    max-width: 500px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .social {
+    gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .socialLink {
+    min-width: 0;
+    font-size: 11px;
+  }
+
+  .socialLink img {
+    width: 24px;
+    height: 24px;
+  }
+}

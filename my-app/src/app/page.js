@@ -2,6 +2,7 @@ import styles from './page.module.css';
 import Navbar from './componentes/navbar';
 import { FaWhatsapp } from "react-icons/fa";
 import PesquisaVagas from './componentes/pesquisavagas';
+import Footer from './componentes/footer';
 
 export default function Home(){
   return(
@@ -76,6 +77,7 @@ export default function Home(){
             <img src="./sobre-valores.png" alt="Valores" width={60} height={60}/>
             <p>Respeito, transparência, inovação e compromisso.</p>
           </div>
+
         </div>
         </div>
       </section>
@@ -96,6 +98,7 @@ export default function Home(){
             <img src="./duvidas.png" alt="atendimento whatsapp" width={650} height={450}/>
           </div>
         </section>
+        <Footer/ >
     </>
   );
 }
